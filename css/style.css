@@ -1,0 +1,30 @@
+
+/* -------------- Polices -------------- */
+
+            @import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+            html {font-family: 'Sunflower', sans-serif;
+            font-size:62.5%;}
+
+
+        /* ------- Font-sizes ------- */
+            .fs50{font-size: 5rem;}
+            .fs40{font-size: 4rem;}
+            .fs30{font-size: 3rem;}
+            .fs20{font-size: 2rem;}
+
+
+/* -------------- Couleurs -------------- */
+
+
+
+/* -------------- Tailles -------------- */
+
+            .w150p{width:150px;}
+            .h300p{height:300px;}
+
+/* -------------- Génériques -------------- */
+
+
+
+/* -------------- Spécifiques -------------- */
+
