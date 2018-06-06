@@ -30,9 +30,12 @@ $('a[href^="#"]').on('click', function(event) {
 });
 
 
+/* Init floating button */
+$(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
 
 
-  /* $(document).ready(function(){
+  $(document).ready(function(){
     $('.sidenav').sidenav();
   });
- */
