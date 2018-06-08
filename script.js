@@ -1,5 +1,7 @@
 M.AutoInit();
 
+/* Fonction scroll */
+
 /* $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
@@ -12,9 +14,9 @@ M.AutoInit();
 }); */
 
 
+/* ---------------------------------------------------------- */
 
-
-/* Fonction avec scroll précis */
+/* Fonction avec scroll précis */                            /* A faire : déclarer la hauteur de la nav +20px et l'ajouter à la place du '90' brut */
 
 
 $('a[href^="#"]').on('click', function(event) {
@@ -30,12 +32,29 @@ $('a[href^="#"]').on('click', function(event) {
 });
 
 
+
+
+
 /* Init floating button */
 $(document).ready(function(){
     $('.fixed-action-btn').floatingActionButton();
   });
 
+/* Konami code */
 
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+
+var key = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],  /* variable sous forme de tableau */
+p = 0; /* init la var p à 0 */
+$(document).keydown(function (e) {
+    if (e.keyCode === key[p++]) { /* permet la progression dans le tableau si keycode correspond à une valeur du tableau */
+        if (p === key.length) {
+            $('#slj').toggle('hidden');
+            p = 0;
+            return false;
+        }
+    }
+    else {
+        
+        p = 0;
+    }
+});
